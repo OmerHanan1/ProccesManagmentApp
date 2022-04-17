@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace ProccesManagmentApp
 {
-    public partial class Form1 : Form
+    public partial class TaskManagmentApp : Form
     {
         private Process[] processes;
-        public Form1()
+        public TaskManagmentApp()
         {
             InitializeComponent();
             GetAllRunningProcceses();

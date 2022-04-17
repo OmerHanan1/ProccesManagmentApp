@@ -1,6 +1,6 @@
 ﻿namespace ProccesManagmentApp
 {
-    partial class Form1
+    partial class TaskManagmentApp
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaskManagmentApp));
             this.listView1 = new System.Windows.Forms.ListView();
             this.Name = new System.Windows.Forms.ColumnHeader();
             this.ID = new System.Windows.Forms.ColumnHeader();
@@ -82,7 +83,7 @@
             this.button2.Text = "Refresh";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // Form1
+            // TaskManagmentApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -90,8 +91,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listView1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "TaskManagmentApp";
+            this.Text = "Procces Managment App - OS course";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
