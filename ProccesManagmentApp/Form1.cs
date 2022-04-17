@@ -51,5 +51,29 @@ namespace ProccesManagmentApp
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (listView1.SelectedItems.Count > 0)
+            {
+
+                int index = 0;
+                foreach (Process p in processes)
+                {
+                    if (p.Id == Int16.Parse(listView1.SelectedItems[0].SubItems[1].Text))
+                    {
+                        index = processes.ToList().IndexOf(p);
+                        break;
+                    }
+                }
+                processes[index].Kill();
+
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            GetAllRunningProcceses();
+        }
     }
 }
