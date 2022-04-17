@@ -13,6 +13,9 @@ namespace ProccesManagmentApp
 {
     public partial class TaskManagmentApp : Form
     {
+        /// <summary>
+        /// List of procceses
+        /// </summary>
         private Process[] processes;
         public TaskManagmentApp()
         {
@@ -20,6 +23,9 @@ namespace ProccesManagmentApp
             GetAllRunningProcceses();
         }
 
+        /// <summary>
+        /// Getting all running procceses from diagnostic library
+        /// </summary>
         public void GetAllRunningProcceses()
         {
             processes = Process.GetProcesses();
@@ -34,6 +40,12 @@ namespace ProccesManagmentApp
                 listView1.Items.Add(newItem);
             }
         }
+
+        /// <summary>
+        /// Function for displaying the memory usage of each procces in a readable way
+        /// </summary>
+        /// <param name="memory"></param>
+        /// <returns></returns>
         string DisplayMemory(long memory)
         {
             string[] suffixes = { " B", " KB", " MB", " GB", " TB", " PB" };
@@ -52,6 +64,11 @@ namespace ProccesManagmentApp
 
         }
 
+        /// <summary>
+        /// Kill task button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             if (listView1.SelectedItems.Count > 0)
@@ -71,6 +88,11 @@ namespace ProccesManagmentApp
             }
         }
 
+        /// <summary>
+        /// Refresh the procceses list
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
             GetAllRunningProcceses();
