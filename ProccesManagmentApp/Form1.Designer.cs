@@ -46,7 +46,7 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(12, 12);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(776, 389);
+            this.listView1.Size = new System.Drawing.Size(556, 540);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -66,7 +66,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.LightSalmon;
-            this.button1.Location = new System.Drawing.Point(608, 407);
+            this.button1.Location = new System.Drawing.Point(388, 558);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(180, 42);
             this.button1.TabIndex = 1;
@@ -77,7 +77,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.LightSalmon;
-            this.button2.Location = new System.Drawing.Point(12, 407);
+            this.button2.Location = new System.Drawing.Point(12, 558);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(176, 42);
             this.button2.TabIndex = 2;
@@ -89,7 +89,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(585, 621);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listView1);
