@@ -67,7 +67,7 @@ namespace ProccesManagmentApp
                     }
                 }
                 processes[index].Kill();
-
+                GetAllRunningProcceses();
             }
         }
 
