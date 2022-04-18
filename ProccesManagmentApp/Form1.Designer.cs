@@ -53,14 +53,17 @@
             // 
             // Name
             // 
+            this.Name.Text = "Name";
             this.Name.Width = 200;
             // 
             // ID
             // 
+            this.ID.Text = "ID";
             this.ID.Width = 200;
             // 
             // Memory
             // 
+            this.Memory.Text = "Memory usage";
             this.Memory.Width = 150;
             // 
             // button1
@@ -94,7 +97,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            //this.Name = "TaskManagmentApp";
+            this.Name = "TaskManagmentApp";
             this.Text = "Procces Managment App - OS course";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
